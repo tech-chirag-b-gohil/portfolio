@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <PageContainer header="About Me">
       <Typography variant="h6" gutterBottom className="pt-4">
-        Hello, 👋 I'm Chirag
+        Hello, 👋 I&#39;m Chirag
       </Typography>
       <Typography variant="body1" gutterBottom lineHeight="24px" textAlign="justify">
-        I'm Experienced <b>ReactJS Frontend Engineer</b> with <b>7+ years</b> of expertise in leading UI development for <b>scalable,
+        I&#39;m Experienced <b>ReactJS Frontend Engineer</b> with <b>7+ years</b> of expertise in leading UI development for <b>scalable,
         high-performance web applications</b>. Equally effective as a <b>team leader or individual contributor</b>, with a proven ability to {" "}
         <b>drive projects from concept to completion</b>. Focused on crafting <b>intuitive UIs</b>, <b>optimizing performance</b>, and leveraging
         modern frontend technologies to deliver <b>seamless user experiences</b>. Skilled in <b>HTML5, CSS3, CSS-in-JS, React,
