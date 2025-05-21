@@ -5,6 +5,18 @@ import { Button, Tooltip, useColorScheme } from "@mui/material";
 
 export default function ThemeChanger() {
     const { mode, setMode } = useColorScheme();
+
+    const getCurrentMode = () => {
+        if (mode === "system") {
+            return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        return mode;
+    }
+
+    const changeMode = () => {
+        setMode(getCurrentMode() === "dark" ? "light" : "dark");
+    };
+
     if (!mode) {
         return null;
     }
@@ -13,12 +25,12 @@ export default function ThemeChanger() {
             variant="contained"
             sx={{ p: 0, minWidth: 0, borderRadius: "50%" }}
             size="large"
-            onClick={() => setMode(mode === "dark" ? "light" : "dark")}
+            onClick={changeMode}
         >
-            <Tooltip title={`${mode === "dark" ? "Light" : "Dark"} mode`}>
+            <Tooltip title={`${getCurrentMode() === "dark" ? "Light" : "Dark"} mode`}>
             <span className="inline-block rounded-full border-2 p-2">
                 {
-                    mode === "dark" ? (
+                    getCurrentMode() === "dark" ? (
                         <LightModeOutlined fontSize="large" />
                     ) : (
                         <DarkModeOutlined fontSize="large" />
