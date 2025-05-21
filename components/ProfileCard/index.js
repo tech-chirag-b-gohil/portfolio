@@ -6,7 +6,7 @@ import { LinkedIn, GitHub, InsertDriveFile, Email, LocationPin } from "@mui/icon
 
 export default function ProfileCard() {
     return (
-        <div className={`${classes.profile_card_wrapper} md:mt-19`}>
+        <div className={`${classes.profile_card_wrapper}`}>
             {/* <div className={classes.profile_image_wrapper}>
                 <Image 
                     src={profile}
