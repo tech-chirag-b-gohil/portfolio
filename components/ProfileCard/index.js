@@ -28,7 +28,7 @@ export default function ProfileCard() {
                         alignItems="center"
                         spacing={1}
                     >
-                        <Tooltip title="Chirag Gohil LinkedIn">
+                        <Tooltip title="LinkedIn">
                             <Button
                                 aria-label="Chirag Gohil LinkedIn"
                                 size="large"
@@ -40,7 +40,7 @@ export default function ProfileCard() {
                                 <LinkedIn />
                             </Button>
                         </Tooltip>
-                        <Tooltip title="Chirag Gohil GitHub">
+                        <Tooltip title="GitHub">
                             <Button
                                 aria-label="Chirag Gohil GitHub"
                                 size="large"
@@ -52,7 +52,7 @@ export default function ProfileCard() {
                                 <GitHub />
                             </Button>
                         </Tooltip>
-                        <Tooltip title="Chirag Gohil Resume">
+                        <Tooltip title="Resume">
                             <Button
                                 aria-label="Chirag Gohil Resume"
                                 size="large"
