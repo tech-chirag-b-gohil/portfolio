@@ -1,4 +1,4 @@
-import { Grid, Button, Stack, Divider, Link, Typography, Tooltip } from "@mui/material";
+import { Grid, Button, Stack, Divider, Link, Typography, Tooltip, Paper } from "@mui/material";
 import classes from "./styles.module.scss";
 import Image from "next/image";
 // import profile from "@/assets/profile.png";
@@ -6,7 +6,7 @@ import { LinkedIn, GitHub, InsertDriveFile, Email, LocationPin } from "@mui/icon
 
 export default function ProfileCard() {
     return (
-        <div className={`${classes.profile_card_wrapper}`}>
+        <Paper elevation={0} className={`${classes.profile_card_wrapper}`}>
             {/* <div className={classes.profile_image_wrapper}>
                 <Image 
                     src={profile}
@@ -15,12 +15,12 @@ export default function ProfileCard() {
                 />
             </div> */}
             <div className={classes.profile_card} >
-                <Typography variant="h5" className={classes.profile_name} color="primary">
+                <Typography variant="h5" fontWeight="bold" fontSize="24px" textAlign="center" lineHeight="40px" color="primary" fontFamily="var(--font-raleway), sans-serif">
                     Chirag Gohil
                 </Typography>
-                <div className={classes.profile_position}>
+                <Typography variant="body1" fontSize="16px" textAlign="center" lineHeight="40px" fontFamily="var(--font-raleway), sans-serif">
                     FullStack Web Developer
-                </div>
+                </Typography>
                 <Grid container justifyContent="center" className="py-3">
                     <Grid
                         container
@@ -80,9 +80,9 @@ export default function ProfileCard() {
                     >
                         <Email color="primary" />
                         <div>
-                            <p className={classes.profile_contact_info_label}>
+                            <Typography variant="subtitle2" fontWeight="bold" fontSize="14px">
                                 Email
-                            </p>
+                            </Typography>
                             <Link
                                 href="mailto:tech.chiraggohil@gmail.com"
                                 underline="none"
@@ -102,9 +102,9 @@ export default function ProfileCard() {
                     >
                         <LocationPin color="primary" />
                         <div>
-                            <p className={classes.profile_contact_info_label}>
+                            <Typography variant="subtitle2" fontWeight="bold" fontSize="14px">
                                 Location
-                            </p>
+                            </Typography>
                             <Link
                                 href="https://maps.app.goo.gl/u7DfTcZT7Uvnt4q86"
                                 underline="none"
@@ -118,6 +118,6 @@ export default function ProfileCard() {
                     </Stack>
                 </Stack>
             </div>
-        </div>
+        </Paper>
     );
 };

@@ -3,7 +3,7 @@ import theme from "@/lib/theme";
 import { roboto, raleway, poppins } from "@/lib/font";
 import "./globals.scss";
 import NavBar from "@/components/NavBar";
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, InitColorSchemeScript } from "@mui/material";
 import ProfileCard from "@/components/ProfileCard";
 
 export const metadata = {
@@ -12,7 +12,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${roboto.className} ${raleway.variable} ${poppins.variable}`}>
+    <html suppressHydrationWarning lang="en" className={`${roboto.className} ${raleway.variable} ${poppins.variable}`}>
+      <head>
+        <InitColorSchemeScript attribute="class" />
+      </head>
       <body className="main_wrapper pt-6 pb-20 md:pb-6">
         <ThemeProvider theme={theme}>
           <div>
