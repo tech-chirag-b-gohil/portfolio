@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.dark{
+    --dark-bg-color: #2A2A3C;
+    background-color: var(--dark-bg-color);
+}
 .main_wrapper {
-    background-color: #F2F5F9;
+    background-color: var(--dark-bg-color, #F3F4F6);
 }

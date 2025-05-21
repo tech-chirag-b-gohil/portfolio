@@ -12,7 +12,7 @@ export default function Home() {
         high-performance web applications</b>. Equally effective as a <b>team leader or individual contributor</b>, with a proven ability to {" "}
         <b>drive projects from concept to completion</b>. Focused on crafting <b>intuitive UIs</b>, <b>optimizing performance</b>, and leveraging
         modern frontend technologies to deliver <b>seamless user experiences</b>. Skilled in <b>HTML5, CSS3, CSS-in-JS, React,
-        TypeScript, JavaScript(ES6+), Context API and Redux for State Management, Python (Django), and AWS</b>, with a strong
+        TypeScript, JavaScript (ES6+), Context API and Redux for State Management, Python (Django), and AWS</b>, with a strong
         focus on <b>scalability, maintainability, and team collaboration</b>.
       </Typography>
 
