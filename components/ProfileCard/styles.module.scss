@@ -5,22 +5,22 @@
 
     .profile_image_wrapper {
         position: absolute;
-        top: -100px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #FFF;
-        border-radius: 10px;
+        top: -60px;
+        left: 0;
+        // left: 50%;
+        // transform: translateX(-50%);
     }
 
     .profile_card {
-        padding: 50px 20px 20px;
+        padding: 20px 20px 20px;
 
         .profile_name {
             font-size: 24px;
             line-height: 40px;
             font-weight: bold;
             text-align: center;
-            font-family: var(--font-raleway), sans-serif
+            margin-left: 150px;
+            font-family: var(--font-raleway), sans-serif;
         }
 
         .profile_position {
@@ -28,6 +28,7 @@
             line-height: 40px;
             text-align: center;
             color: #666;
+            margin-left: 150px;
             font-family: var(--font-raleway), sans-serif
         }
 

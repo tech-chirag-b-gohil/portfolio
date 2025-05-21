@@ -6,7 +6,7 @@ import { LinkedIn, GitHub, InsertDriveFile, PhoneIphone, WhatsApp, Email, Locati
 
 export default function ProfileCard() {
     return (
-        <div className={`${classes.profile_card_wrapper} mt-24`}>
+        <div className={`${classes.profile_card_wrapper} mt-14 md:mt-19`}>
             <div className={classes.profile_image_wrapper}>
                 <Image 
                     src={profile}

@@ -12,7 +12,7 @@ export default function NavBar() {
         <Grid
             container
             justifyContent="flex-end"
-            className="fixed md:relative z-10 md:z-0 bottom-0 left-0 right-0 md:bottom-auto md:left-auto md:right-auto md:mb-8"
+            className="fixed md:relative z-10 md:z-0 bottom-0 left-0 right-0 md:bottom-auto md:left-auto md:right-auto md:mb-4"
         >
             <Grid
                 container
