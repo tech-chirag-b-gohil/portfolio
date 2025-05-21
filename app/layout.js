@@ -6,6 +6,10 @@ import NavBar from "@/components/NavBar";
 import { Container, Grid } from "@mui/material";
 import ProfileCard from "@/components/ProfileCard";
 
+export const metadata = {
+  title: 'Chirag Gohil - FullStack Web Developer'
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.className} ${raleway.variable} ${poppins.variable}`}>
