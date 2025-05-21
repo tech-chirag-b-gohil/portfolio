@@ -2,40 +2,68 @@
 import PageContainer from "@/components/PageContainer";
 
 import {
-  Card,
-  CardContent,
   Typography,
-  Grid,
-  Box,
+  Stack,
+  Divider
 } from '@mui/material';
-import WorkIcon from '@mui/icons-material/Work';
-import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent, timelineItemClasses } from '@mui/lab';
+import Image from "next/image";
+import JPMChase from "@/assets/jpmorganchase_logo.jpeg";
+import AdaLogo from "@/assets/55ip_logo.svg";
+import ZISystechLogo from "@/assets/zi_systech_logo.png";
+import durationCalculator from "@/lib/durationCalculator";
 
 const experiences = [
   {
-    role: 'Software Engineer III',
-    company: 'JP Morgan Service India Pvt Ltd',
-    date: 'Feb 2023 – Present',
+    company: 'JPMoragnChase',
+    logo: JPMChase,
+    type: 'Full-time',
+    start: 'April 2021',
+    end: null,
     location: 'Mumbai, Maharashtra, India',
+    roles: [
+      {
+        position: 'Software Engineer III',
+        start: 'February 2023',
+        end: null,
+      },
+      {
+        position: 'Software Engineer I',
+        start: 'April 2021',
+        end: 'January 2023'
+      },
+    ]
   },
   {
-    role: 'Software Engineer I',
-    company: 'JP Morgan Service India Pvt Ltd',
-    date: 'Apr 2021 – Jan 2023',
-    location: 'Mumbai, Maharashtra, India',
-  },
-  {
-    role: 'Software Developer',
     company: 'Ada Annex Advisory Service Pvt Ltd',
-    date: 'Nov 2019 – Mar 2021',
+    logo: AdaLogo,
+    type: 'Full-time',
+    start: 'November 2019',
+    end: 'March 2021',
     location: 'Mumbai, Maharashtra, India',
+    roles: [
+      {
+        position: 'Software Developer',
+        start: 'November 2019',
+        end: 'March 2021',
+      },
+    ]
   },
   {
-    role: 'UI Developer',
     company: 'ZI Systech Pvt Ltd',
-    date: 'Aug 2017 – Nov 2019',
+    logo: ZISystechLogo,
+    type: 'Full-time',
+    start: 'August 2017',
+    end: 'November 2019',
     location: 'Mumbai, Maharashtra, India',
-  },
+    roles: [
+      {
+        position: 'UI Developer',
+        start: 'August 2017',
+        end: 'November 2019',
+      },
+    ]
+  }
 ];
 
 
@@ -43,39 +71,48 @@ export default function Experience() {
 
   return (
     <PageContainer header="Work Experience">
-      <Box>
-      {experiences.map((exp, index) => (
-        <Card
-          key={index}
-          variant=""
-          sx={{ mb: 2 }}
-        >
-          <CardContent>
-            <Grid container spacing={2} wrap="nowrap">
-              <Grid className="mt-[1px]">
-                <WorkIcon color="primary" />
-              </Grid>
-              <Grid>
-                <Typography variant="h6">{exp.role}</Typography>
-                <Typography variant="subtitle1" color="text.secondary">
-                  {exp.company}
-                </Typography>
-                <Typography variant="subtitle1" color="text.secondary">
-                  — {exp.location}
-                </Typography>
-                <Box display="flex" alignItems="center" mt={1}>
-                  <CalendarTodayIcon fontSize="small" sx={{ mr: 1, mb: 0.5 }} />
-                  <Typography variant="body2">{exp.date}</Typography>
-                </Box>
-                {/* <Typography variant="body2" mt={2}>
-                  {exp.description}
-                </Typography> */}
-              </Grid>
-            </Grid>
-          </CardContent>
-        </Card>
-      ))}
-    </Box>
+      <Stack
+        direction="column"
+        divider={<Divider orientation="horizontal" variant="middle" flexItem />}
+        spacing={2}
+        className="mt-4"
+      >
+        {
+          experiences.map((exp) => (
+            <div key={exp.company}>
+              <Stack
+                direction="row"
+                justifyContent="space-between"
+                alignItems="center"
+                spacing={2}
+              >
+                <Image src={exp.logo} alt={exp.company} width={52} />
+                <div className="flex-1">
+                  <Typography variant="h6">{exp.company}</Typography>
+                  <Typography variant="body2">{exp.type} · <span className="whitespace-nowrap">{durationCalculator(exp.start, exp.end)}</span></Typography>
+                  <Typography variant="subtitle2" color="text.secondary">{exp.location}</Typography>
+                </div>
+              </Stack>
+              <Timeline sx={{ mt: 2, [`& .${timelineItemClasses.root}:before`]: { flex: 0, padding: 0 } }}>
+                {
+                  exp.roles.map((role, index) => (
+                    <TimelineItem key={index}>
+                      <TimelineSeparator className="ml-1 mr-5">
+                        <TimelineDot />
+                        {index < exp.roles.length - 1 && <TimelineConnector />}
+                      </TimelineSeparator>
+                      <TimelineContent>
+                        <Typography variant="body1" fontWeight={600} fontFamily="var(--font-poppins)">{role.position}</Typography>
+                        <Typography variant="subtitle2" color="text.secondary">{role.start} - {role.end || "Present"} · <span className="whitespace-nowrap">{durationCalculator(role.start, role.end)}</span></Typography>
+                      </TimelineContent>
+                    </TimelineItem>
+                  ))
+                }
+              </Timeline>
+            </div>
+          ))
+        }
+      </Stack>
     </PageContainer>
   )
 }
