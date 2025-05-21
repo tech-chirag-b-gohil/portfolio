@@ -11,25 +11,25 @@ export default function NavBar() {
     return (
         <Grid
             container
-            justifyContent="flex-end"
+            // justifyContent="flex-end"
             className="fixed md:relative z-10 md:z-0 bottom-0 left-0 right-0 md:bottom-auto md:left-auto md:right-auto md:mb-4"
         >
             <Grid
                 container
-                flex={{ xs: 1, md: "none"}}
+                flex={1}
                 className={classes.nav_bar_container}
                 justifyContent="space-evenly"
                 alignItems="center"
             >
                 <Button className="flex-1" variant={pathName === "/" ? "contained" : "text"}>
-                    <Link href="/" className={classes.nav_bar_link}>
+                    <Link href="/" className={`${classes.nav_bar_link} flex-1`}>
                         <HomeRounded className={classes.nav_bar_icon} />
                         <br /> 
                         <>About Me</>
                     </Link>
                 </Button>
                 <Button className="flex-1" variant={pathName === "/experience" ? "contained" : "text"}>
-                    <Link href="/experience" className={classes.nav_bar_link}>
+                    <Link href="/experience" className={`${classes.nav_bar_link} flex-1`}>
                         <Work className={classes.nav_bar_icon} />
                         <br /> 
                         <>Experience</>
