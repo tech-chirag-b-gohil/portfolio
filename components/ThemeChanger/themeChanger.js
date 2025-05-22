@@ -22,8 +22,8 @@ export default function ThemeChanger() {
     }
     return (
         <Button
-            variant="contained"
-            sx={{ p: 0, minWidth: 0, borderRadius: "50%" }}
+            variant="outlined"
+            sx={{ p: 0, minWidth: 0, borderRadius: "50%", backgroundColor: "var(--dark-bg-color, #F3F4F6)" }}
             size="large"
             onClick={changeMode}
         >
