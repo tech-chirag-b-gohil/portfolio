@@ -22,13 +22,13 @@ export default function Home() {
       <ul className="list-disc pl-5">
         <li>
           <Typography variant="body1" gutterBottom lineHeight="24px">
-            <b>Frontend:</b> HTML5, ReactJS, TypeScript, JavaScript (ES6+), AngularJS, jQuery, AG Grid (deep expertise), 
+            <b>Frontend:</b> HTML5, ReactJS, TypeScript, JavaScript (ES6+), Next.js, AngularJS, jQuery, AG Grid (deep expertise), 
             AG Charts, ReCharts, Wordpress (CMS), Jest & React Testing Library
           </Typography>
         </li>
         <li>
           <Typography variant="body1" gutterBottom lineHeight="24px">
-            <b>Styling:</b> CSS3, CSS Grid & Flexbox, SCSS/LESS, Tailwind UI, MUI, Bootstrap UI, CSS-in-JS (Styled Components, Emotion)
+            <b>Styling:</b> CSS3, CSS Grid & Flexbox, SCSS/LESS, Tailwind UI, MUI, CSS-in-JS (Styled Components, Emotion), Bootstrap UI, Ant Design
           </Typography>
         </li>
         <li>

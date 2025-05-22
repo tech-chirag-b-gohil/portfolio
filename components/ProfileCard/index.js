@@ -1,8 +1,9 @@
 import { Grid, Button, Stack, Divider, Link, Typography, Tooltip, Paper } from "@mui/material";
 import classes from "./styles.module.scss";
 import Image from "next/image";
-// import profile from "@/assets/profile.png";
 import { LinkedIn, GitHub, InsertDriveFile, Email, LocationPin } from "@mui/icons-material";
+import { LINKEDIN_LINK, GITHUB_LINK, RESUME_LINK, EMAIL_LINK, LOCATION_LINK } from "@/constants/connectLinks";
+// import profile from "@/assets/profile.png";
 
 export default function ProfileCard() {
     return (
@@ -33,7 +34,7 @@ export default function ProfileCard() {
                                 aria-label="Chirag Gohil LinkedIn"
                                 size="large"
                                 className={classes.profile_social_icon}
-                                href="https://www.linkedin.com/in/chirag-b-gohil/"
+                                href={LINKEDIN_LINK}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -45,7 +46,7 @@ export default function ProfileCard() {
                                 aria-label="Chirag Gohil GitHub"
                                 size="large"
                                 className={classes.profile_social_icon}
-                                href="https://github.com/tech-chirag-b-gohil/"
+                                href={GITHUB_LINK}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -57,7 +58,7 @@ export default function ProfileCard() {
                                 aria-label="Chirag Gohil Resume"
                                 size="large"
                                 className={classes.profile_social_icon}
-                                href="https://drive.google.com/file/d/1SK4XqFAmNKh5CzkL1YsHDpMtksSK1J-u/view?usp=sharing"
+                                href={RESUME_LINK}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -84,13 +85,13 @@ export default function ProfileCard() {
                                 Email
                             </Typography>
                             <Link
-                                href="mailto:tech.chiraggohil@gmail.com"
+                                href={EMAIL_LINK}
                                 underline="none"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={classes.profile_contact_info_link}
                             >
-                                tech.chiraggohil@gmail.com
+                                {EMAIL_LINK.replace("mailto:", "")}
                             </Link>
                         </div>
                     </Stack>
@@ -106,7 +107,7 @@ export default function ProfileCard() {
                                 Location
                             </Typography>
                             <Link
-                                href="https://maps.app.goo.gl/u7DfTcZT7Uvnt4q86"
+                                href={LOCATION_LINK}
                                 underline="none"
                                 target="_blank"
                                 rel="noopener noreferrer"
