@@ -43,7 +43,12 @@ export default function Home() {
         </li>
         <li>
           <Typography variant="body1" gutterBottom lineHeight="24px">
-            <b>Backend & Databases:</b> Python (Django), PHP, NodeJS, PostgreSQL
+            <b>Backend & Databases:</b> Python (Django and FastAPI), PHP, NodeJS, PostgreSQL
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="body1" gutterBottom lineHeight="24px">
+            <b>Python Libraries:</b> Pandas, Numpy, Django, FastAPI
           </Typography>
         </li>
         <li>
