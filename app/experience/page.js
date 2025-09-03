@@ -32,7 +32,8 @@ const experiences = [
         resp: [
           "Utilizing Figma for designing intuitive user interfaces, led the UI development for the PM Console web portal using React, TypeScript, Context API and Redux, and integrating REST APIs.",
           "Worked closely with backend & data analyst teams on platform architecture, including AWS services, scheduled workers, database models, and data flow.",
-          "Drafted API contracts to define structured JSON request/response formats, reducing frontend-backend integration errors by 40%.",
+          "Built business logic, REST APIs for account submission and trade order generation workflows using Python3.10.",
+          "As a part of artifact team, worked on migrating common business logic and process into python packages which are used across applications.",
           "Implemented AG-Grid with advanced features such as Row Grouping, Aggregation, Tree Data, Master-Detail Views, Server-Side Data Handling, Custom Headers, Filters, and Pagination, enhancing data visualization performance by 50%.",
           "Served as the Point of Contact (POC) for 55ip and Trade Generation, mentoring 5+ UI developers and providing ongoing consultation and knowledge transfer."
         ]
