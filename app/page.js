@@ -11,8 +11,8 @@ export default function Home() {
         Experienced <b>ReactJS Engineer</b> with <b>8 years</b> of expertise in leading UI development for <b>scalable, high-performance 
         web applications</b> and <b>Python Engineer</b> with <b>6 years</b> of expertise in developing <b>REST APIs</b>. 
         Equally effective as a <b>team leader or individual contributor</b>, with a proven ability to <b>drive projects from concept 
-        to completion</b>. Skilled in <b>React, TypeScript, JavaScript (ES6+), Python (Django), Pandas and AWS</b>, with a strong focus 
-        on <b>scalability, maintainability, and team collaboration</b>.
+        to completion</b>. Skilled in <b>HTML5, CSS3, CSS-in-JS, React, TypeScript, JavaScript (ES6+), Context API and Redux for State 
+        Management, Python (Django), Pandas and AWS</b>, with a strong focus on <b>scalability, maintainability, and team collaboration</b>.
       </Typography>
 
       <Typography variant="h6" gutterBottom className="pt-6" color="warning">
