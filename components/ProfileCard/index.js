@@ -22,6 +22,9 @@ export default function ProfileCard() {
                 <Typography variant="body1" fontSize="16px" textAlign="center" lineHeight="40px" fontFamily="var(--font-raleway), sans-serif">
                     FullStack Web Developer
                 </Typography>
+                <Typography variant="body2" fontSize="14px" textAlign="center" lineHeight="24px" className="mt-2 px-2" fontFamily="var(--font-poppins), sans-serif" color="textSecondary">
+                    React • TypeScript • Python • Django
+                </Typography>
                 <Grid container justifyContent="center" className="py-3">
                     <Grid
                         container

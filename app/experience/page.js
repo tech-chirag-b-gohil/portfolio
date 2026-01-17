@@ -29,12 +29,18 @@ const experiences = [
         start: 'February 2023',
         end: null,
         key: 'j2',
+        tech_stack: ['React', 'TypeScript', 'Python', 'Django', 'Redux', 'MUI', 'Jest', 'React Testing Library', 'Jenkins', 'AWS', 'AG-Grid' ],
         resp: [
-          "Utilizing Figma for designing intuitive user interfaces, led the UI development for the PM Console web portal using React, TypeScript, Context API and Redux, and integrating REST APIs.",
+          "Utilizing Figma for designing intuitive user interfaces, led the UI development for the PM Console web portal using React, TypeScript, Redux with Redux-Toolkit, and integrating REST APIs.",
+          "Used MUI (Material-UI) component library to create a consistent and responsive design system, enhancing the user experience across various devices.",
+          "Worked with POs and UX designers to understand requirements and translate as well as breakdown features into manageable tasks for agile sprints.",
+          "Monitored and optimized application performance, for faster load times and improving overall responsiveness through code-splitting, lazy loading, and efficient state management.",
+          "Implemented unit tests using Jest and React Testing Library, achieving 80%+ code coverage and ensuring the reliability of UI components.",
+          "Worked on CI/CD pipelines using Jenkins for automated testing and deployment.",
           "Worked closely with backend & data analyst teams on platform architecture, including AWS services, scheduled workers, database models, and data flow.",
-          "Built business logic, REST APIs for account submission and trade order generation workflows using Python3.10.",
-          "As a part of artifact team, worked on migrating common business logic and process into python packages which are used across applications.",
           "Implemented AG-Grid with advanced features such as Row Grouping, Aggregation, Tree Data, Master-Detail Views, Server-Side Data Handling, Custom Headers, Filters, and Pagination, enhancing data visualization performance by 50%.",
+          "Built business logic, REST APIs for account submission and trade order generation workflows using Python3.12.",
+          "As a part of artifact team, worked on migrating common business logic and process into python packages which are used across applications.",
           "Served as the Point of Contact (POC) for 55ip and Trade Generation, mentoring 5+ UI developers and providing ongoing consultation and knowledge transfer."
         ]
       },
@@ -43,12 +49,13 @@ const experiences = [
         start: 'April 2021',
         end: 'January 2023',
         key: 'j1',
+        tech_stack: ['React', 'TypeScript', 'Python', 'Django', 'Redux', 'MUI', 'Jest', 'React Testing Library', 'AngularJs', 'AG-Grid'],
         resp: [
           "Spearheaded the migration of the 55ip web portal (AngularJS) UI into React using TypeScript and Redux for State Management. Implementing modernized designs and successfully completing the transition within 5 months.",
           "Created UI features using React libraries and improved performance for handling large datasets of 500K+ rows.",
-          "Built REST APIs for Python commands and SQL queries using Django ORM, reducing the time taken for daily activity of report generation by 80%.",
           "Scripted a PDF generation tool using Node.js (Puppeteer-core) cutting document generation time from 10 seconds to 3 seconds, which generates 1000+ PDF daily.",
-          "Used AG-Grid in Trade Generation for enhancing data visualization and performance. Reduced the page load time from 3 mins to 2 sec"
+          "Used AG-Grid in Trade Generation for enhancing data visualization and performance. Reduced the page load time from 3 mins to 2 sec",
+          "Built REST APIs for Python commands and SQL queries using Django ORM, reducing the time taken for daily activity of report generation by 80%."
         ]
       },
     ]
@@ -66,6 +73,7 @@ const experiences = [
         start: 'November 2019',
         end: 'March 2021',
         key: 'a1',
+        tech_stack: ['ReactJS', 'AngularJS', 'JavaScript', 'HTML5', 'CSS3', 'Python'],
         resp: [
           "Designed 10+ UI wireframes iteratively based on team feedback.",
           "Developed and maintained 20+ UI components using ReactJS, AngularJS, and JavaScript.",
@@ -89,6 +97,7 @@ const experiences = [
         start: 'August 2017',
         end: 'November 2019',
         key: 'z1',
+        tech_stack: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'AngularJS', 'WordPress'],
         resp: [
           "Sole UI Developer managing the entire web portal UI for 1.5+ years.",
           "Collaborated with designers & product managers to deliver user-friendly features. Designed and built 20+ UI features using HTML, CSS, JavaScript, jQuery, and AngularJS.",
@@ -149,6 +158,9 @@ export default function Experience() {
                       <TimelineContent sx={{ pr: 0 }}>
                         <Typography variant="body1" fontWeight={600} fontFamily="var(--font-poppins)">{role.position}</Typography>
                         <Typography variant="subtitle2" color="text.secondary">{role.start} - {role.end || "Present"} • <span className="whitespace-nowrap">{durationCalculator(role.start, role.end)}</span></Typography>  
+                        <Typography variant="caption">
+                          {role.tech_stack.join(' • ')}
+                        </Typography>
                         {
                           showMore.includes(role.key) ? (
                             <div className="my-1">

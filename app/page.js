@@ -22,17 +22,17 @@ export default function Home() {
         <li>
           <Typography variant="body1" gutterBottom lineHeight="24px">
             <b>Frontend:</b> HTML5, ReactJS, TypeScript, JavaScript (ES6+), Next.js, AngularJS, jQuery, AG Grid (deep expertise), 
-            AG Charts, ReCharts, Wordpress (CMS), Jest & React Testing Library
+            AG Charts, ReCharts, Wordpress (CMS), Jest & React Testing Library, Playwright for Testing
           </Typography>
         </li>
         <li>
           <Typography variant="body1" gutterBottom lineHeight="24px">
-            <b>Styling:</b> CSS3, CSS Grid & Flexbox, SCSS/LESS, Tailwind UI, MUI, CSS-in-JS (Styled Components, Emotion), Bootstrap UI, Ant Design
+            <b>Styling:</b> CSS3, CSS Grid & Flexbox, SCSS/LESS, Shadcn UI, Tailwind UI, MUI, CSS-in-JS (Styled Components, Emotion), Bootstrap UI, Ant Design
           </Typography>
         </li>
         <li>
           <Typography variant="body1" gutterBottom lineHeight="24px">
-            <b>State Management:</b> Context-API, Redux, Redux-Saga, Redux-Thunk
+            <b>State Management:</b> Context-API, Redux, Redux-Toolkit, Redux-Saga, Redux-Thunk
           </Typography>
         </li>
         <li>
@@ -52,12 +52,17 @@ export default function Home() {
         </li>
         <li>
           <Typography variant="body1" gutterBottom lineHeight="24px">
+            <b>APIs:</b> RESTful APIs, GraphQL
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="body1" gutterBottom lineHeight="24px">
             <b>Designing & Prototyping Tool:</b> Figma, InVision, Zeplin
           </Typography>
         </li>
         <li>
           <Typography variant="body1" gutterBottom lineHeight="24px">
-            <b>Tools & DevOps:</b> AWS, Puppeteer, Jenkins, Git, Docker
+            <b>CI/CD Tools & DevOps:</b> Jenkins, GitHub Actions, Puppeteer, Git, AWS, Docker
           </Typography>
         </li>
         <li>
@@ -70,13 +75,7 @@ export default function Home() {
             <b>Soft Skills:</b> Leadership & Mentorship, Collaboration & Communication, Flexibility & Continuous Learning
           </Typography>
         </li>
-        <li>
-          <Typography variant="body1" gutterBottom lineHeight="24px">
-            <b>CI/CD Tools:</b> Jenkins, GitHub Actions
-          </Typography>
-        </li>
       </ul>
-
     </PageContainer>
   );
 }
