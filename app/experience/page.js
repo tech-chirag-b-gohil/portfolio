@@ -158,7 +158,7 @@ export default function Experience() {
                       <TimelineContent sx={{ pr: 0 }}>
                         <Typography variant="body1" fontWeight={600} fontFamily="var(--font-poppins)">{role.position}</Typography>
                         <Typography variant="subtitle2" color="text.secondary">{role.start} - {role.end || "Present"} • <span className="whitespace-nowrap">{durationCalculator(role.start, role.end)}</span></Typography>  
-                        <Typography variant="caption">
+                        <Typography variant="body2" fontSize={14}>
                           {role.tech_stack.join(' • ')}
                         </Typography>
                         {
