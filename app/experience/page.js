@@ -32,15 +32,16 @@ const experiences = [
         tech_stack: ['React', 'TypeScript', 'Python', 'Django', 'Redux', 'MUI', 'Jest', 'React Testing Library', 'Jenkins', 'AWS', 'AG-Grid' ],
         resp: [
           "Utilizing Figma for designing intuitive user interfaces, led the UI development for the PM Console web portal using React, TypeScript, Redux with Redux-Toolkit, and integrating REST APIs.",
+          "Worked on CI/CD pipelines using Jenkins for automated testing and deployment.",
+          "Worked closely with backend & data analyst teams on platform architecture, including AWS services, scheduled workers, database models, and data flow.",
           "Used MUI (Material-UI) component library to create a consistent and responsive design system, enhancing the user experience across various devices.",
           "Worked with POs and UX designers to understand requirements and translate as well as breakdown features into manageable tasks for agile sprints.",
           "Monitored and optimized application performance, for faster load times and improving overall responsiveness through code-splitting, lazy loading, and efficient state management.",
           "Implemented unit tests using Jest and React Testing Library, achieving 80%+ code coverage and ensuring the reliability of UI components.",
-          "Worked on CI/CD pipelines using Jenkins for automated testing and deployment.",
-          "Worked closely with backend & data analyst teams on platform architecture, including AWS services, scheduled workers, database models, and data flow.",
           "Implemented AG-Grid with advanced features such as Row Grouping, Aggregation, Tree Data, Master-Detail Views, Server-Side Data Handling, Custom Headers, Filters, and Pagination, enhancing data visualization performance by 50%.",
           "Built business logic, REST APIs for account submission and trade order generation workflows using Python3.12.",
           "As a part of artifact team, worked on migrating common business logic and process into python packages which are used across applications.",
+          "Led the team in parallel during the development of a new React application by providing architectural guidance. Managed and review all the pull requests, ensuring high code quality, consistency, and adherence to best practises.",
           "Served as the Point of Contact (POC) for 55ip and Trade Generation, mentoring 5+ UI developers and providing ongoing consultation and knowledge transfer."
         ]
       },
