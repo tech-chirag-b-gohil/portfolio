@@ -31,6 +31,8 @@ const experiences = [
         key: 'j2',
         tech_stack: ['React', 'TypeScript', 'Python', 'Django', 'Redux', 'MUI', 'Jest', 'React Testing Library', 'Jenkins', 'AWS', 'AG-Grid' ],
         resp: [
+          "Built Watchtower E2E using AI-assisted development (Claude) - a real-time batch pipeline monitoring dashboard with Django REST Framework backend (14+ API endpoints, OAuth2/OIDC auth, pandas-based aggregation) and a React frontend featuring custom SVG DAG visualizer, AG Grid Enterprise drilldowns, and Redux Saga Polling.",
+          "Built RedisExplorer using AI-assisted development (Claude) - a Redis monitoring dashboard use to monitor multiple Redis with Django Web Framework (Django Views, Django Templates, Django Forms).",
           "Utilizing Figma for designing intuitive user interfaces, led the UI development for the PM Console web portal using React, TypeScript, Redux with Redux-Toolkit, and integrating REST APIs.",
           "Worked on CI/CD pipelines using Jenkins for automated testing and deployment.",
           "Worked closely with backend & data analyst teams on platform architecture, including AWS services, scheduled workers, database models, and data flow.",

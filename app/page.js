@@ -8,8 +8,8 @@ export default function Home() {
         Hello, 👋 I&#39;m Chirag
       </Typography>
       <Typography variant="body1" gutterBottom lineHeight="24px" textAlign="justify">
-        Experienced <b>ReactJS Engineer</b> with <b>8 years</b> of expertise in leading UI development for <b>scalable, high-performance 
-        web applications</b> and <b>Python Engineer</b> with <b>6 years</b> of expertise in developing <b>REST APIs</b>. 
+        Experienced <b>ReactJS Engineer</b> with <b>9 years</b> of expertise in leading UI development for <b>scalable, high-performance 
+        web applications</b> and <b>Python Engineer</b> with <b>7 years</b> of expertise in developing Web application using <b>Django REST Framework</b>. 
         Equally effective as a <b>team leader or individual contributor</b>, with a proven ability to <b>drive projects from concept 
         to completion</b>. Skilled in <b>HTML5, CSS3, CSS-in-JS, React, TypeScript, JavaScript (ES6+), Context API and Redux for State 
         Management, Python (Django), Pandas and AWS</b>, with a strong focus on <b>scalability, maintainability, and team collaboration</b>.
@@ -42,7 +42,7 @@ export default function Home() {
         </li>
         <li>
           <Typography variant="body1" gutterBottom lineHeight="24px">
-            <b>Backend & Databases:</b> Python (Django and FastAPI), PHP, NodeJS, PostgreSQL
+            <b>Backend & Databases:</b> Python (Django and FastAPI), PHP, NestJS, PostgreSQL
           </Typography>
         </li>
         <li>
