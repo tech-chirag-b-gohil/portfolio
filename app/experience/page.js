@@ -31,7 +31,7 @@ const experiences = [
         key: 'j2',
         tech_stack: ['React', 'TypeScript', 'Python', 'Django', 'Redux', 'MUI', 'Jest', 'React Testing Library', 'Jenkins', 'AWS', 'AG-Grid' ],
         resp: [
-          "•	Developed reusable Python-Django based package - Scope Config Management, for scope-based configuration management using AI-assisted development (Claude) - config resolution based on hierarchy along with its built in UI for review and audit.",
+          "Developed reusable Python-Django based package - Scope Config Management, for scope-based configuration management using AI-assisted development (Claude) - config resolution based on hierarchy along with its built in UI for review and audit.",
           "Built Watchtower E2E using AI-assisted development (Claude) - a real-time batch pipeline monitoring dashboard with Django REST Framework backend (14+ API endpoints, OAuth2/OIDC auth, pandas-based aggregation) and a React frontend featuring custom SVG DAG visualizer, AG Grid Enterprise drilldowns, and Redux Saga Polling.",
           "Built RedisExplorer using AI-assisted development (Claude) - a Redis monitoring dashboard use to monitor multiple Redis with Django Web Framework (Django Views, Django Templates, Django Forms).",
           "Utilizing Figma for designing intuitive user interfaces, led the UI development for the PM Console web portal using React, TypeScript, Redux with Redux-Toolkit, and integrating REST APIs.",
