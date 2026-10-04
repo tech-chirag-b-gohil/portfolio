@@ -17,7 +17,7 @@ import { useState } from "react";
 
 const experiences = [
   {
-    company: 'JPMoragnChase',
+    company: 'JPMorganChase',
     logo: JPMChase,
     type: 'Full-time',
     start: 'April 2021',
